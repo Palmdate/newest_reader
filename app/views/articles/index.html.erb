@@ -1,0 +1,29 @@
+<nav class="navbar navbar-light bg-light" style="z-index: 2;">
+    <h1>NEWS</h1>
+</nav>
+<div class="alert col-off-4 col-12" style='margin: 80px 5% 0 0;'></div>
+<ul>
+    <% @articles.each do |article| %>
+        <li class="booking-card" style="background-image: url('<%= article.image == nil ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/fbanijhrol4-annie-spratt-776x951.jpg' : article.image %>')">
+            <div class="book-container">
+                <div class="content">
+                    <%= link_to "#{article.domain }", article_path(article), :class => "btn" %></button>
+                </div>
+            </div>
+            <div class="informations-container">
+                <h2 class="title"><%= article.title.slice(0..19) + '...' %></h2>
+                <p class="sub-title" style="color: #7d7d7d; font-size: 0.7rem;"><%= article.author %></p>
+                <div class="more-information">                    
+                    <p class="disclaimer" ><%= raw article.content %></p>
+                </div>
+            </div>
+        </li>
+    <% end %>
+</ul>
+<script>
+ if ($('li.booking-card').length < 21) {
+     location.reload(true);
+ } else if ( $('li.booking-card').length > 20 && $('li.booking-card').length < 150) {
+     $('div.alert').append("<div class='alert alert-info' role='alert' >You can reload this page to get more newest.</div>");
+ };
+</script>

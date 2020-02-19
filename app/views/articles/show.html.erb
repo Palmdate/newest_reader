@@ -1,0 +1,18 @@
+<nav class="navbar navbar-light bg-light" style="z-index: 1;">
+    <%= button_to articles_path, class: "btn btn-outline-dark", method: :get do%>
+        Back
+    <% end %>
+</nav>
+<figure class="figure col-12" style="text-align: center; padding-top: 50px;">
+    <img src="<%= @article.image == nil ? 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/fbanijhrol4-annie-spratt-776x951.jpg' : @article.image %>" class="img-fluid" alt="Responsive image" style="height: 300px;">
+    <h1><%= @article.title %></h1>
+    <h2><small><%= @article.domain %></small></h6>
+    <div style="text-align: left; padding: 0 5%;">
+        <%= raw @article.content %>
+    </div>
+</figure>
+<style>
+ p{
+     padding: 0;
+ }
+</style>
