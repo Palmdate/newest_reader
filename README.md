@@ -1,24 +1,34 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<pre>
+Implement a better News Reader for Hacker News using Rails.<br />
+Get information from website: <a href="https://news.ycombinator.com/best</a>
+</pre>
 
-Things you may want to cover:
+Configuration:
 
-* Ruby version
+* Ruby version: 2.7
 
-* System dependencies
+* Ruby on Rails: 6.0
 
-* Configuration
+* Support from gem: nokogiri || ruby-readability
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
+* Frond end: HTML5/CSS/Bootstrap 4
 
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
 
-* ...
+<pre><a href="https://newest-reader.herokuapp.com/</a></pre>
+
+* How to run the test suite
+
+
+* Deployment instructions
+  <pre>
+  - bundle install
+  - rails db:migrate
+  - rails assets:precompile
+  - rails s
+  - Go to <a href="https:/localhost:3000/</a> to check result.
+
