@@ -2,7 +2,7 @@
 
 <pre>
 Implement a better News Reader for Hacker News using Rails.<br />
-Get information from website: <a href="https://news.ycombinator.com/best</a>
+Get information from website: <a href="https://news.ycombinator.com/best">https://news.ycombinator.com/best</a>
 </pre>
 
 Configuration:
@@ -17,11 +17,11 @@ Configuration:
 
 * Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+* Demo:
 
-<pre><a href="https://newest-reader.herokuapp.com/</a></pre>
+<pre><a href="https://newest-reader.herokuapp.com/">https://newest-reader.herokuapp.com/</a></pre>
 
-* How to run the test suite
+* Test suit available for test in helper.
 
 
 * Deployment instructions
@@ -30,5 +30,5 @@ Configuration:
   - rails db:migrate
   - rails assets:precompile
   - rails s
-  - Go to <a href="https:/localhost:3000/</a> to check result.
+  - Go to <a href="https:/localhost:3000/">localhost:3000</a> to check result.
 
